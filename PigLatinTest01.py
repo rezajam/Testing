@@ -8,12 +8,12 @@ c = ''
 for inp in inputList:
             for j in inp:
                         if (inp.startswith('a') or inp.startswith('e') or inp.startswith('i') or inp.startswith('o') or inp.startswith('u') or inp.startswith('y')):
-                                                b = inp + 'way'
-                                                print b
+                                                c = inp + 'way'
                                                 if len(c) == (len(inp) + 3):
+                                                            print c
                                                             break            
                         elif j in 'ieouay':
-                                    c = inp[inp.find(j):] + inp[:inp.find(j)] +'ay'
-                                    print c
-                                    if len(c) == (len(inp) + 2):
+                                    b = inp[inp.find(j):] + inp[:inp.find(j)] +'ay'
+                                    print b
+                                    if len(b) == (len(inp) + 2):
                                                 break
